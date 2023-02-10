@@ -8,13 +8,6 @@
 <title>yahoo!!!</title>
 </head>
 <body>
-<%
-Date date = new Date();
-%>
-<div>
-Current Date is <%= date %>
-</div>
-
-My first JSP ${name} 
+My first JSP ${name} and password is ${password}
 </body>
 </html>

@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response )throws ServletException, IOException {
-		String name = request.getParameter("name");//get parameter from browser and will set attribute from it.
-		String name1 = "yash1";
-		request.setAttribute("name", name1);
+		
+		request.setAttribute("name", request.getParameter("name"));
+		request.setAttribute("password", request.getParameter("password"));
 		
 		
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
