@@ -1,5 +1,6 @@
 package com.webapplication.login;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,8 @@ import com.webapplication.login.UserValidation;
 @Controller
 public class LoginController {
 	
-	UserValidation service= new UserValidation();
+	@Autowired
+	UserValidation service;
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String showLoginPage() {
