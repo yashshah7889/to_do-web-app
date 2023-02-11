@@ -8,8 +8,8 @@
 <title>yahoo!!!</title>
 </head>
 <body>
-<p><font color="red">${error_messgae}</font></p>
-<form action="/spring-mvc/login" method="POST">
+<p><font color="red">${error_message}</font></p>
+<form action="/login" method="POST">
 
 Name: <input type="text" name="name">
 Password:<input type="password" name="password">

@@ -1,4 +1,4 @@
-package com.webapplication;
+package com.webapplication.login;
 
 public class UserValidation {
 	
