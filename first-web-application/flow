@@ -1,0 +1,14 @@
+http://loclhost:8080/spring-mvc/login
+
+spring-mvc
+
+1)Dispatcher servlet -> Front Controller ->handles incoming http request and forward it to controller
+
+2)/login-> LoginController(handler) -> this controller is used on the the link
+
+3)view resolver
+login-> /WEB-INF/views/login.jsp -> prefix and suffix  for login set in todoServlet.
+
+login.jsp -> View
+
+/WEB-INF/views/login.jsp
