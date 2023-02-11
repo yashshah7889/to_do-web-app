@@ -12,3 +12,5 @@ login-> /WEB-INF/views/login.jsp -> prefix and suffix  for login set in todoServ
 login.jsp -> View
 
 /WEB-INF/views/login.jsp
+
+model -> anything we want to pass from controller to view model is used.
