@@ -7,6 +7,7 @@
 <title>Welcome</title>
 </head>
 <body>
-Welcome ${name}
+Welcome ${name}. <BR/>
+Now you can <a href="/list-todos">manage your todos.</a>
 </body>
 </html>

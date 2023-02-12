@@ -7,9 +7,13 @@
 <title>Yahoo!!</title>
 </head>
 <body>
-Hi ${name} </BR>
-Your Todos are 
-${todos}</BR>
+
+<H1>ADD a todo</H1>
+</BR>
+<form method="post">
+	<input name="desc" type="text"/>
+	<input type="submit" value="ADD"/>
+</form>
 
 <a class="button" href="/add-todo">Add</a>
 </body>
