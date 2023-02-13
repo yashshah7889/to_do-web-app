@@ -17,6 +17,15 @@ public class TodoService {
 				false));
 	}
 	
+	public List<Todo> retrieveTodos(String user) {
+		List<Todo> filteredTodos = new ArrayList<Todo>();
+		for (Todo todo : todos) {
+			if (todo.getUser().equals(user))
+				filteredTodos.add(todo);
+		}
+		return filteredTodos;
+	}
+	
 	public void addTodo(String name, String desc, Date targetDate, boolean isDone) {
 		todos.add(new Todo(++todoCount, name, desc, targetDate, isDone));
 	}
@@ -30,15 +39,5 @@ public class TodoService {
 			}
 		}
 	}
-	
-	public List<Todo> retrieveTodos(String user) {
-		List<Todo> filteredTodos = new ArrayList<Todo>();
-		for (Todo todo : todos) {
-			if (todo.getUser().equals(user))
-				filteredTodos.add(todo);
-		}
-		return filteredTodos;
-	}
-
 	
 }

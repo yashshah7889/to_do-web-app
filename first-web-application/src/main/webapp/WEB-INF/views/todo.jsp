@@ -14,7 +14,5 @@
 	<input name="desc" type="text"/>
 	<input type="submit" value="ADD"/>
 </form>
-
-<a class="button" href="/add-todo">Add</a>
 </body>
 </html>
